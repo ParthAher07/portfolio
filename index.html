@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #112D4E;
+            color: #F9F7F7;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: #3F72AF;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 25px;
+            list-style: none;
+        }
+
+        nav ul li :hover {
+            box-shadow: 5px 5px 15px lightblue;
+            font-size: 1.1em;
+            color: rgb(67, 67, 236);
+            background-color: lightblue;
+            border-radius: 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .left {
+            font-size: 2rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 180px;
+            margin-bottom: 110px;
+        }
+
+        .rightsection {
+            font-size: 2em;
+            text-align: center;
+            margin: 100px 0px;
+        }
+
+        img {
+            border-radius: 50%;
+        }
+
+        .secondsection img {
+            opacity: 0.5;
+        }
+
+        #element {
+            color: rgb(53, 197, 244);
+        }
+
+        #element2 {
+            color: rgb(53, 197, 244);
+            font-style: italic;
+            font-size: 30px;
+        }
+
+        main hr {
+            color: lightblue;
+            margin: 40px 0px;
+        }
+
+        .secondsection {
+            height: 450px;
+            max-width: 80vw;
+            margin: auto;
+        }
+
+        h4 {
+            margin-top: 80px;
+            text-decoration: none;
+        }
+
+        .hl {
+            margin-top: 100px;
+            width: 1200px;
+            height: 1px;
+            background-color: white;
+            display: flex;
+        }
+
+        .hl .vl {
+            height: 60px;
+            width: 1px;
+            background-color: white;
+            margin: 0px 150px;
+        }
+
+        .vl img {
+            width: 23px;
+            position: relative;
+            bottom: 30px;
+            right: 10px;
+        }
+
+        .vertical-title {
+            width: 200px;
+            position: relative;
+            top: 30px;
+            right: 3px;
+            color: #3d85dc;
+        }
+
+        .vertical-desc {
+            width: 200px;
+            position: relative;
+            top: 25px;
+            right: 3px;
+            font-size: 7px;
+            margin: 7px 0px;
+            color: #88b5eb;
+        }
+
+        .thirdsection {
+            max-width: 80vw;
+            margin: auto;
+        }
+
+        .thirdsection ul {
+            margin-left: 130px;
+            margin-top: 30px;
+            margin-bottom: 40px;
+            color: #3d85dc;
+        }
+
+        .rights {
+            text-align: center;
+            background-color: gray;
+        }
+
+        .thirdsection ul li {
+            margin: 20px 0px;
+            display: flex;
+            font-size: large;
+            font-weight: bolder;
+        }
+
+        .thirdsection ul li div {
+            color: white;
+            font-size: small;
+            font-weight: lighter;
+            margin-top: 3px;
+        }
+
+        #skillanimation1 {
+            margin: 6px 0px 6px 20px;
+            height: 10px;
+            background-color: #00ffff;
+            border-top-left-radius: 50px;
+            border-bottom-left-radius: 50px;
+        }
+
+        #skillanimation2 {
+            margin: 6px 20px 6px 0px;
+            height: 10px;
+            background-color: white;
+            border-top-right-radius: 50px;
+            border-bottom-right-radius: 50px;
+        }
+
+        ul img {
+            width: 23px;
+        }
+
+        .thirdsection p {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .fourthsection {
+            max-width: 80vw;
+            margin: auto;
+        }
+
+        @media screen and (max-width: 2000px) {
+
+            *{
+                
+            }
+          
+        }
+    </style>
+</head>
+
+<body>
+    <header id="home">
+        <nav>
+            <div class="left">PARTH AHER</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#line1">About</a></li>
+                    <li><a href="#line2">Skills</a></li>
+                    <li><a href="/">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection"><img src="myphoto2.png" alt="my image" height="300px" width="300px"></div>
+            <div class="rightsection">Hi! My name is <span class="color"> Parth Aher</span> <br> I am passionate <span
+                    id="element"></span></div>
+            <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+            <script>
+                var typed = new Typed('#element', {
+                    strings: ['<i>Web</i> developer.', ' graphic designer.'],
+                    typeSpeed: 50,
+                });
+            </script>
+        </section>
+        <hr color="lightblue" id="line1">
+        <section class="secondsection">
+            <span id="element2"></span>
+            <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+            <script>
+                var typed = new Typed('#element2', {
+                    strings: ['<i>want to know more about</i> me?', ' just scroll a little bit...'],
+                    typeSpeed: 50,
+                });
+            </script>
+            <h4>My life journey</h4>
+
+            <div class="hl">
+                <div class="vl">
+                    <img src="birth.png" alt="image">
+                    <div class="vertical-title">7th april 2005</div>
+                    <div class="vertical-desc"> day i was born <br> very important... lol &#128514; </div>
+                </div>
+                <div class="vl">
+                    <img src="mvp.jpg" alt="image">
+                    <div class="vertical-title">Primary Education <br> (2011-2021)</div>
+                    <div class="vertical-desc">I done my schooling frpm new maratha highshool
+                        <br>Nashik,Maharashtra
+                    </div>
+                </div>
+                <div class="vl">
+                    <img src="spectrum.jpg" alt="image">
+                    <div class="vertical-title">Secondary Education <br>(2021-2023)</div>
+                    <div class="vertical-desc">I started my Jee preparation in class 11
+                        <br> from spectrum coaches in nashik
+                    </div>
+                </div>
+                <div class="vl">
+                    <img src="IITG.png" alt="image">
+                    <div class="vertical-title">Btech in CSE <br> (2023-present)</div>
+                    <div class="vertical-desc">right now I am in IIT Guwahati <br>
+                        doing btech in computer science </div>
+                </div>
+            </div>
+        </section>
+        <hr color="lightblue" id="line2">
+        <section class="thirdsection">
+            <h4> My Skills </h4>
+            <ul>
+                <li> <img src="C++.png">&nbsp;&nbsp; C++ &nbsp;&nbsp;&nbsp;&nbsp; --> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <div>
+                        advanced - 9/10 &nbsp;&nbsp;&nbsp;&nbsp;
+                    </div>
+                    <hr id="skillanimation1" width="180px">
+                    <hr id="skillanimation2" width="20px">
+                </li>
+                <li><img src="html.png">&nbsp;&nbsp;HTML &nbsp;&nbsp;&nbsp;&nbsp; --> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <div>
+                        advanced - 9/10 &nbsp;&nbsp;&nbsp;&nbsp;
+                    </div>
+                    <hr id="skillanimation1" width="180px">
+                    <hr id="skillanimation2" width="20px">
+                </li>
+                <li><img src="CSS.jpg">&nbsp;&nbsp;CSS &nbsp;&nbsp;&nbsp;&nbsp; --> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <div>
+                        advanced - 8/10 &nbsp;&nbsp;&nbsp;&nbsp;
+                    </div>
+                    <hr id="skillanimation1" width="160px">
+                    <hr id="skillanimation2" width="40px">
+                </li>
+                <li><img src="javascript.jpg">&nbsp;&nbsp;Javascript &nbsp;&nbsp;&nbsp;&nbsp; -->
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <div>
+                        beginner - 7/10 &nbsp;&nbsp;&nbsp;&nbsp;
+                    </div>
+                    <hr id="skillanimation1" width="140px">
+                    <hr id="skillanimation2" width="60px">
+                </li>
+            </ul>
+            <p>currently working on bootstrap</p>
+        </section>
+        <hr color="lightblue" id="line3">
+        <section class="fourthsection">
+            <h4>Contact Me</h4>
+        </section>
+    </main>
+
+    <footer>
+        <div class="rights">
+            copyright &#169; parthsportfolio.com | all rights reserved
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
